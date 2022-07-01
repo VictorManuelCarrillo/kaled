@@ -5,26 +5,25 @@ import { createTheme, ThemeProvider } from '@mui/material/styles'
 // MUI Color invoycing ____________________ //
 import {
   amber,
-  blue,
+  cyan,
   lightBlue,
-  green,
-  grey,
-  blueGrey
+  purple,
+  grey
   }from '@mui/material/colors'
 
 const kaledTheme = createTheme( {
   palette: {
 
     primary: {
-      light: blue[100],
-      main: blue[400],
-      dark: blue[800],
+      light: cyan[100],
+      main: cyan[300],
+      dark: cyan[500],
     },
 
     secondary: {
-      light: green[400],
-      main: green[600],
-      dark: green[800]
+      light: purple[200],
+      main: purple[400],
+      dark: purple[700]
     },
 
     button: {
@@ -42,9 +41,9 @@ const kaledTheme = createTheme( {
       },
 
       text: {
-        light: blueGrey['A200'],
-        main: blueGrey[100],
-        dark: blueGrey['A700'],
+        light: grey['A100'],
+        main: grey['A200'],
+        dark: grey['A400'],
       }
     },
 
