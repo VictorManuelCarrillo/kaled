@@ -40,3 +40,10 @@ const CardPrimaryAction = ( props) => {
 }
 
 export default CardPrimaryAction
+
+// component props values
+
+// image = 'string'
+// alt= 'string'
+// title = 'text'
+// text = 'text'
