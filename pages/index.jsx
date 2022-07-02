@@ -33,12 +33,41 @@ import SecondaryTitle from '../components/02-data-display/typography/SecondaryTi
 
 export default function Home() {
 
-  // Swwiper-JS imagesarray __________ //
+  // Swiper-JS images array __________ //
   const carouselImages = [
     {
       img: '/images/home/carousel/1.jpg'
     }, {
       imag: '/images/home/carousel/1.jpg'
+    }
+  ]
+
+  // services array __________ //
+  const services = [
+    {
+      icon: <RestaurantIcon sx={{ fontSize: '6em' }}/>,
+      title: 'alimentación balanceada',
+      text: 'La alimentación es la base para una buena recuperación'
+    }, {
+      icon: <BiotechIcon sx={{ fontSize: '6em' }}/>,
+      title: 'medicina & psicología',
+      text: 'Con un historial médico y terapias nos aseguramos de asistir a cada usuario para una salud fisica y mental mejor'
+    }, {
+      icon: <FitnessCenterIcon sx={{ fontSize: '6em' }}/>,
+      title: 'actividad física',
+      text: 'El ejercicio en conjunto con la buena alimentación ayuda a bajar los niveles de ansiedad'
+    }, {
+      icon: <SelfImprovementIcon sx={{ fontSize: '6em' }}/>,
+      title: 'disciplina física mental',
+      text: 'Actividades que promueven una disciplina fisica y mental, así como mayor concentración'
+    }, {
+      icon: <GroupsIcon sx={{ fontSize: '6em' }}/>,
+      title: 'terapia grupal',
+      text: 'Con dinámicas en grupo, los usuarios pueden reforzar su confianza y mejorar su autoestima'
+    }, {
+      icon: <PsychologyIcon sx={{ fontSize: '6em' }}/>,
+      title: 'psicología individual',
+      text: 'Nuestros psicologos tratan los problemas de los usuarios para un tratamiento mas a fondo y sistemático'
     }
   ]
 
@@ -230,7 +259,68 @@ export default function Home() {
 
 
   {/* CONTACTO SECTION ____________________ */}
-      
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-around',
+          alignItems: 'center',
+          flexDirection: 'column',
+          p: 4,
+          bgcolor: 'secondary.main',
+          [`@media (min-width: 600px)`]: {
+            flexDirection: 'row'
+          }
+        }}>
+
+        <Typography variant='h4'>¿Dudas sobre nuestro programa o tratamiento?</Typography>
+
+        <PrimaryBtn text='llámanos'/>
+      </Box>
+
+
+  {/* NUESTROS SERVICIOS SECTION ____________________ */}
+      <Box component='section'>
+
+        <PrimaryTitle title='nuestros servicios'/>
+
+        <Container maxWidth='lg'>
+
+          <Grid container sx={{ display: 'flex', justifyContent: 'center', mt: 8 }}>
+
+            { services.map( ( service, idx) => (
+
+              <Grid item
+                key={ idx}
+                xs={12} sm={6} md={4}
+                sx={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  flexDirection: 'column',
+                  minHeight: '50vh'
+                }}>
+
+                  { service.icon}
+
+                  <Typography
+                    variant='h5'
+                    textAlign='center'
+                    fontWeight='bold'
+                    sx={{ color: 'secondary.main' }}>
+                    { service.title}
+
+                    <Divider sx={{ my: 1, border: 1 }}/>
+                  </Typography>
+
+                  <Typography
+                    textAlign='center'
+                    sx={{ mb: 10 }}>
+                    { service.text}
+                  </Typography>
+              </Grid>
+            ))}
+          </Grid>
+        </Container>
+      </Box>
     </Layout>
   )
 }
