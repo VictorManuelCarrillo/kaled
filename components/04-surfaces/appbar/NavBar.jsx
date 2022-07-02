@@ -7,6 +7,8 @@ import {
   useTheme,
   useMediaQuery
   } from '@mui/material'
+// Next component
+import Link from 'next/link'
 // React component
 import { Fragment } from 'react'
 // components
@@ -58,12 +60,14 @@ const NavBar = () => {
 
             { links.map( ( link, idx) => (
 
-              <Button
-                key={ idx}
-                href={ link.href}
-                color='inherit'>
-                  { link.name}
-                </Button>
+              <Link href={ link.href}>
+                <Button
+                  key={ idx}
+
+                  color='inherit'>
+                    { link.name}
+                  </Button>
+              </Link>
             ))}
             <PrimaryBtn text='contáctanos'/>
           </Fragment>

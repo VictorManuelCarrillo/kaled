@@ -9,13 +9,19 @@ const PrincipalHeading = ( props) => {
   return (
 
     <Box sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
       px: 4,
-      minHeight: '20vh',
+      color: 'white',
+      minHeight: '30vh',
+      backgroundSize: 'cover',
+      backgrounPosition: 'center',
       backgroundImage: `url(${ props.image})`
     }}>
 
       <Typography
-        varaint='h2'
+        variant='h2'
         textAlign='center'
         fontWeight='bold'
         textTransform='uppercase'>

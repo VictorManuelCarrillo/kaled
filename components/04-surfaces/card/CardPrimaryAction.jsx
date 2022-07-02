@@ -1,4 +1,4 @@
-// MUI components
+// MUI components invoycing ____________________ //
 import{
   Card,
   CardActionArea,
@@ -7,14 +7,14 @@ import{
   Typography
   } from '@mui/material'
 
+
 const CardPrimaryAction = ( props) => {
 
   return (
 
     <Card sx={{
       color: 'card.text',
-      minWidth: 350,
-      maxWidth: 450 }}>
+      minWidth: 350, maxWidth: 450 }}>
 
       <CardActionArea>
 
@@ -40,10 +40,3 @@ const CardPrimaryAction = ( props) => {
 }
 
 export default CardPrimaryAction
-
-// component props values
-
-// image = 'string'
-// alt = 'string'
-// title = 'string'
-// text = 'string'

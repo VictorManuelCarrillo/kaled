@@ -30,6 +30,7 @@ import PrimaryBtn from '../components/01-inputs/button/PrimaryBtn'
 import SecondaryBtn from '../components/01-inputs/button/SecondaryBtn'
 import PrimaryTitle from '../components/02-data-display/typography/PrimaryTitle'
 import SecondaryTitle from '../components/02-data-display/typography/SecondaryTitle'
+import ModalImg from '../components/07-utils/modal/ModalImg'
 
 export default function Home() {
 
@@ -38,7 +39,27 @@ export default function Home() {
     {
       img: '/images/home/carousel/1.jpg'
     }, {
-      imag: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
+    }, {
+      img: '/images/home/carousel/1.jpg'
     }
   ]
 
@@ -148,6 +169,47 @@ export default function Home() {
           </Grid>
         </Grid>
       </Box>
+
+
+  {/* CAROUSEL SECTION ____________________ */}
+      <Box>
+
+        <Swiper
+          modules={ [ Navigation, Pagination, Scrollbar, Autoplay ]}
+          navigation={ true}
+          loop={ true}
+          autoplay={ {
+            delay: 2500,
+            disableOnInteraction: false
+          }}
+          scrollbar={ { draggable: true }}
+          pagination={ { clickable: true }}
+          breakpoints={{
+            360: {
+              slidesPerView: 1
+            },
+            420: {
+              slidesPerView: 2
+            },
+            710: {
+              slidesPerView: 3
+            },
+            1200: {
+              slidesPerView: 4
+            },
+          }}>
+
+          { carouselImages.map( ( image, idx) => (
+
+            <SwiperSlide key={ idx}>
+
+              <ModalImg image={ image.img}/>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Box>
+
+
   {/* INSTITUCION SECTION ____________________ */}
       <Box component='section'>
 
