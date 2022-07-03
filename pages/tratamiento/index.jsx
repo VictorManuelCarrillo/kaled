@@ -60,7 +60,7 @@ export default function Tratamiento() {
         </Container>
       </Box>
 
-      <Box component='section' sx={{ py: 4 }}>
+      <Box component='section' sx={{ pt: 4 }}>
 
         <PrimaryTitle title='etapas del tratamiento'/>
 
