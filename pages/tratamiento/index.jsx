@@ -83,12 +83,6 @@ export default function Tratamiento() {
               <li> <Typography>Compromiso Existencial</Typography></li>
               <li> <Typography>Autocontrol</Typography></li>
             </ul>
-
-            <Typography textAlign='justify' sx={{ pt: 2, px: 2 }}>
-              el tiempo de duracion de la primera fase es de 30 dás, durante este tiempo el usuario se adapta al lugar, convive con los demás usuarios y empieza a participar en los círculos terapéuticos entre otras dinámicas.
-              <br />
-              Así mismo el usuario toma autocontrol sobre sus acciones y pensamientos para ser una persona más estable
-            </Typography>
           </Grid>
 
   {/* PRIMERA FASE __________ */}
@@ -118,16 +112,48 @@ export default function Tratamiento() {
 
               <li> <Typography>Proyecto de vida</Typography></li>
               <li> <Typography>Factores de riesgo y protección</Typography></li>
-              <li> <Typography>Participación en todos los círculos terapéuticos</Typography></li>
-              <li> <Typography>asimilación de reglas y normas</Typography></li>
-              <li> <Typography>asimilación de la enfermedad</Typography></li>
+              <li> <Typography>Conocer toda la mecánica de todos los círculos terapéuticos</Typography></li>
+              <li> <Typography>Guía del hermano menor</Typography></li>
             </ul>
 
-            <Typography textAlign='justify' sx={{ pt: 2, px: 2 }}>
-              el tiempo de duracion de la primera fase es de 30 dás, durante este tiempo el usuario se adapta al lugar, convive con los demás usuarios y empieza a participar en los círculos terapéuticos entre otras dinámicas.
-              <br />
-              Así mismo el usuario toma autocontrol sobre sus acciones y pensamientos para ser una persona más estable
-            </Typography>
+            <Typography variant='subtitle1' fontWeight='bold' sx={{ my: 2 }}>ETAPA DE CONSOLIDACIÓN</Typography>
+
+            <Typography variant='subtitle2' fontWeight='bold'>Objetibos por etapa:</Typography>
+
+            <ul>
+
+              <li> <Typography>Plan de reinserción a la sociedad</Typography></li>
+              <li> <Typography>Cofacilitar círulos terapéuticos</Typography></li>
+              <li> <Typography>Guía del hermano menor</Typography></li>
+            </ul>
+
+            <Typography variant='subtitle1' fontWeight='bold' sx={{ my: 2 }}>ETAPA DE SERVICIO SOCIAL</Typography>
+
+            <Typography variant='subtitle2' fontWeight='bold'>Objetibos por etapa:</Typography>
+
+            <ul>
+
+              <li> <Typography>Servicio por la comunidad</Typography></li>
+              <li> <Typography>Revisión de proyecto de vida</Typography></li>
+            </ul>
+          </Grid>
+
+  {/* PRIMERA FASE __________ */}
+          <Grid item xs={12} sm={12} md={12} lg={4} sx={{ py: 2, px: 4, color: 'white', background: 'linear-gradient(45deg, rgba(3,249,237,1) 0%, rgba(0,164,231,1) 100%)' }}>
+            <Typography variant='h4' sx={{ pt: 4, pb: 2, textAlign: 'center', fontWeight: 'bold' }}>TERCERA FASE</Typography>
+
+            <Divider variant='middle' sx={{ border: '0.1em solid', borderColor: 'white', bgcolor: 'white' }}/>
+
+            <Typography variant='subtitle1' fontWeight='bold' sx={{ my: 2 }}>RITUAL DE LUZ</Typography>
+
+            <Typography variant='subtitle2' fontWeight='bold'>Objetibos por etapa:</Typography>
+
+            <ul>
+
+              <li> <Typography>Plan de seguimiento</Typography></li>
+              <li> <Typography>Desprendimiento gradual</Typography></li>
+              <li> <Typography>Seguimiento semanal</Typography></li>
+            </ul>
           </Grid>
         </Grid>
       </Box>
