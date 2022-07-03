@@ -11,6 +11,10 @@ import {
   grey
   }from '@mui/material/colors'
 
+  import { ParallaxProvider } from 'react-scroll-parallax';
+
+
+
 const kaledTheme = createTheme( {
   palette: {
 
@@ -74,7 +78,10 @@ function MyApp({ Component, pageProps }) {
   return(
 
     <ThemeProvider theme={ kaledTheme}>
-      <Component {...pageProps} />
+      <ParallaxProvider>
+
+        <Component {...pageProps} />
+      </ParallaxProvider>
     </ThemeProvider>
   )
 
