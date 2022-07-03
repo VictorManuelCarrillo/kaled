@@ -179,9 +179,10 @@ export default function Home() {
           navigation={ true}
           loop={ true}
           autoplay={ {
-            delay: 2500,
+            delay: 800,
             disableOnInteraction: false
           }}
+          speed={1500}
           scrollbar={ { draggable: true }}
           pagination={ { clickable: true }}
           breakpoints={{
