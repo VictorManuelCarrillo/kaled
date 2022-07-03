@@ -58,10 +58,10 @@ const SpeedDialBtn = () => {
         }
       }}>
 
-      { actions.map( ( action) => (
+      { actions.map( ( action, idx) => (
 
         <SpeedDialAction
-          key={ action.name}
+          key={ idx}
           icon={ action.icon}
           tooltipTitle={ action.name}
           sx={{

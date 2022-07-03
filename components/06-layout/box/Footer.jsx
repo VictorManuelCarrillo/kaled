@@ -107,7 +107,7 @@ const Footer = () => {
 
             <Typography variant='caption'>Google Maps, Google Inc.</Typography>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.126315621594!2d-103.23517564940332!3d20.664439386129143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b594527b6fdf%3A0x103208c92ba72b9d!2sKaled%20Coyula%20AC!5e0!3m2!1ses-419!2smx!4v1656266351120!5m2!1ses-419!2smx" width='100%' height='400px' style={{ border:0, borderRadius: 5}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.126315621594!2d-103.23517564940332!3d20.664439386129143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b594527b6fdf%3A0x103208c92ba72b9d!2sKaled%20Coyula%20AC!5e0!3m2!1ses-419!2smx!4v1656266351120!5m2!1ses-419!2smx" width='100%' height='400px' style={{ border:0, borderRadius: 5}} allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </Grid>
         </Grid>
       </Container>

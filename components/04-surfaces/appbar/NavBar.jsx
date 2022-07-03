@@ -60,11 +60,8 @@ const NavBar = () => {
 
             { links.map( ( link, idx) => (
 
-              <Link href={ link.href}>
-                <Button
-                  key={ idx}
-
-                  color='inherit'>
+              <Link key={ idx} href={ link.href}>
+                <Button color='inherit'>
                     { link.name}
                   </Button>
               </Link>
