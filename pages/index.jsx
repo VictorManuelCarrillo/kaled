@@ -31,6 +31,7 @@ import SecondaryBtn from '../components/01-inputs/button/SecondaryBtn'
 import PrimaryTitle from '../components/02-data-display/typography/PrimaryTitle'
 import SecondaryTitle from '../components/02-data-display/typography/SecondaryTitle'
 import ModalImg from '../components/07-utils/modal/ModalImg'
+import CardPrimaryAction from '../components/04-surfaces/card/CardPrimaryAction'
 
 export default function Home() {
 
@@ -92,6 +93,39 @@ export default function Home() {
     }
   ]
 
+  const cards = [
+    {
+      title: 'drogadicción',
+      alt: 'instituto contra drogadicción',
+      image: '/images/home/tratamiento/drogadiccion.png',
+
+    }, {
+      title: 'famacodependencia',
+      alt: 'instituto contra farmacodependencia',
+      image: '/images/home/tratamiento/farmacodependencia.jpg',
+
+    }, {
+      title: 'ansiedad',
+      alt: 'instituto contra ansiedad',
+      image: '/images/home/tratamiento/ansiedad.png',
+
+    }, {
+      title: 'alcoholismo',
+      alt: 'instituto contra drogadicción',
+      image: '/images/home/tratamiento/alcoholismo.png',
+
+    }, {
+      title: 'codependencia',
+      alt: 'instituto contra drogadicción',
+      image: '/images/home/tratamiento/codependencia.png',
+
+    }, {
+      title: 'depresión',
+      alt: 'instituto contra drogadicción',
+      image: '/images/home/tratamiento/depresion.png',
+
+    }
+  ]
   return(
 
     <Layout>
@@ -228,10 +262,10 @@ export default function Home() {
               minHeight: '70vh',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              backgroundImage: `url('/images/1.jpg')`
+              backgroundImage: `url('/images/home/2.png')`
             }}>
 
-            <Typography variant='h3' textAlign='center' sx={{ mb: 12, color: 'white' }}>
+            <Typography variant='h3' textAlign='center' sx={{ color: 'white' }}>
               Un lugar de recuperación para ellas...
             </Typography>
 
@@ -250,13 +284,17 @@ export default function Home() {
               minHeight: '70vh',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              backgroundImage: `url('/images/1.jpg')`
+              backgroundImage: `url('/images/home/3.png')`
             }}>
 
-            <Typography variant='h3' textAlign='center' sx={{ mb: 12, color: 'white' }}>
+            <Typography variant='h3' textAlign='center' sx={{color: 'white' }}>
               Aún estas a tiempo de ayudarlo...
               <br />
+              <br />
               (33-1914-7923)
+              <br />
+              <br />
+              (33-1068-7964)
             </Typography>
 
             <SecondaryBtn text='llámanos'/>
@@ -316,6 +354,31 @@ export default function Home() {
                 Elusuario debe ser tratado con respeto y dignidad. Es responsabilidad de todo el personal que el usuario labore en nuestras terapias y dinámicas para que nuestro trabajo se vea reflejado en su recuperación y en una actitud positiva desde su ingreso hasta finalmente su egreso.
               </Typography>
             </Grid>
+          </Grid>
+        </Container>
+      </Box>
+
+
+  {/* CRADS SECTION ____________________ */}
+      <Box sx={{ py: 4 }}>
+
+        <PrimaryTitle title='tratamiento'/>
+        <SecondaryTitle title='Tenemos un equipo multidisciplinario capacitado para cualquier enfermedad, transtorno o adicción'/>
+        <Container>
+
+          <Grid container rowSpacing={8} columnSpacing={2} sx={{ display: 'flex', justifyContent: 'center', pt: 2 }}>
+
+            { cards.map( ( card, idx) => (
+
+              <Grid key={ idx} item xs={12} sm={6} md={4} lg={3}>
+
+                <CardPrimaryAction 
+                  image={ card.image}
+                  alt={ card.alt}
+                  title={ card.title}
+                  text={ card.text}/>
+              </Grid>
+            ))}
           </Grid>
         </Container>
       </Box>

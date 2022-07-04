@@ -13,6 +13,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu'
 // React components
 import { Fragment, useState } from 'react'
+import Link from 'next/link'
 
 const DrawerNav = () => {
 
@@ -24,6 +25,12 @@ const DrawerNav = () => {
     {
       name: 'inicio',
       href: '/'
+    }, {
+      name: 'nosotros',
+      href: '/nosotros'
+    }, {
+      name: 'tratamiento',
+      href: '/tratamiento'
     }
   ]
 
@@ -39,19 +46,21 @@ const DrawerNav = () => {
 
           { drawerLinks.map( ( link, idx) => (
 
-            <Box key={ idx}>
+            <Link href={ link.href}>
+              <Box key={ idx}>
 
-              <ListItemButton href={ link.href}>
+                <ListItemButton href={ link.href}>
 
-                <ListItemIcon>
+                  <ListItemIcon>
 
-                  <ListItemText sx={{ pt: '0.5em' }}>
-                    { link.name}
-                  </ListItemText>
-                </ListItemIcon>
-              </ListItemButton>
-              <Divider />
-            </Box>
+                    <ListItemText sx={{ pt: '0.5em' }}>
+                      { link.name}
+                    </ListItemText>
+                  </ListItemIcon>
+                </ListItemButton>
+                <Divider />
+              </Box>
+            </Link>
           ))}
         </List>
       </Drawer>

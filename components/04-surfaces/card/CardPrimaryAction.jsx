@@ -14,7 +14,7 @@ const CardPrimaryAction = ( props) => {
 
     <Card sx={{
       color: 'card.text',
-      minWidth: 350, maxWidth: 450 }}>
+      maxWidth: 450 }}>
 
       <CardActionArea>
 
@@ -22,7 +22,8 @@ const CardPrimaryAction = ( props) => {
           component='img'
           image={ props.image}
           alt={ props.alt}
-          sx={{ maxHeight: '25vh' }}/>
+          sx={{
+            height: '25vh'}}/>
 
           <CardContent sx={{ bgcolor: 'card.content' }}>
 

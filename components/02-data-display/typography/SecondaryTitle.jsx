@@ -18,7 +18,7 @@ const SecondaryTitle = ( props) => {
         variant='h4'
         fontWeight='bold'
         textAlign='center'
-        sx={{ color: 'secondary.main' }}>
+        sx={{ maxWidth: '90vw', mx: 'auto', color: 'secondary.main' }}>
         { props.title}
       </Typography>
     </Box>
