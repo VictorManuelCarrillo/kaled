@@ -221,7 +221,7 @@ export default function Home() {
             <Grid item xs={12} lg={4}>
 
               <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                <Image src='/images/home/logo.jpg' width={907} height={902}/>
+                <Image src='/images/home/logo.jpg' alt='instituo kaled ac coyula' width={907} height={902}/>
               </Box>
             </Grid>
           </Grid>
