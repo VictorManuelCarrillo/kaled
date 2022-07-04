@@ -27,7 +27,7 @@ const CardPrimaryAction = ( props) => {
             alt={ props.alt}
             sx={{
               height: '25vh',
-              transition: 'transform 0.5s',
+              transition: 'all 1s',
               '&:hover': {
                 transform: 'scale(1.02)'
               }}}/>

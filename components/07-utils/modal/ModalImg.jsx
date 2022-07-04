@@ -41,8 +41,8 @@ const ModalImg = ( props) =>{
           left: '50%',
           transform: 'translate( -50%, -50%)',
           boxShadow: 15,
-          width: '60vw',
-          height: '90vh',
+          width: props.modalWidth,
+          height: props.modalHeight,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundImage: `url(${ props.image})`

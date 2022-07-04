@@ -17,6 +17,8 @@ import FitnessCenterIcon from '@mui/icons-material/FitnessCenter'
 import SelfImprovementIcon from '@mui/icons-material/SelfImprovement'
 import GroupsIcon from '@mui/icons-material/Groups'
 import PsychologyIcon from '@mui/icons-material/Psychology'
+// Next component
+import Image from 'next/image'
 // Swiper-JS component
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper'
@@ -38,29 +40,49 @@ export default function Home() {
   // Swiper-JS images array __________ //
   const carouselImages = [
     {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/1.jpg',
+      width: '30vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/2.jpg',
+      width: '30vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/3.jpg',
+      width: '60vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/4.jpg',
+      width: '30vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/5.jpg',
+      width: '60vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/6.jpg',
+      width: '60vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/7.jpg',
+      width: '30vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/8.jpg',
+      width: '60vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/9.jpg',
+      width: '60vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/10.jpg',
+      width: '30vw',
+      height: '90vh'
     }, {
-      img: '/images/home/carousel/1.jpg'
-    }, {
-      img: '/images/home/carousel/1.jpg'
+      img: '/images/home/carousel/11.jpg',
+      width: '60vw',
+      height: '90vh'
     }
   ]
 
@@ -163,12 +185,12 @@ export default function Home() {
         </Typography>
 
         <Typography variant='h6' sx={{ px: 4 }}>
-        Si notas que alguien de tu familia sufre de adicciones, codependencia o conductas nocivas para la salud <Button variant='text' href='https://wa.link/yupydt' sx={{ fontWeight: 'bold', color: '#43c23c' }}>contáctate</Button> con nosotros y ayúdale a mejorar el rumbo de su vida
+        Si notas que alguien de tu familia sufre de adicciones, codependencia o conductas nocivas para la salud <Button variant='text' href='https://wa.link/yupydt' target='_blank' sx={{ fontWeight: 'bold', color: '#43c23c' }}>contáctate</Button> con nosotros y ayúdale a mejorar el rumbo de su vida
         </Typography>
 
         <Box sx={{ my: 4 }}>
 
-          <PrimaryBtn text='llámanos' href='https://wa.link/yupydt' startIcon={ <PhoneIcon />}/>
+          <PrimaryBtn text='llámanos' href='tel:3319147923' startIcon={ <PhoneIcon />}/>
         </Box>
       </Box>
 
@@ -177,35 +199,33 @@ export default function Home() {
       <Box sx={{ py: 4 }}>
 
       <PrimaryTitle title='¿Porqué elejirnos a nosotros?'/>
+        
+        <Container maxWidth='lg'>
 
-        <Grid
-          container
-          spacing={4}
-          sx={{ p: 4 }}>
+          <Grid container spacing={4} sx={{ p: 4 }}>
 
-          <Grid
-            item
-            xs={12} lg={6}>
+            <Grid item xs={12} lg={8}>
 
-            <Typography textAlign='justify'>
-            Somos una institución que opera sus instalaciones dentro de una  <strong>comunidad terapéutica</strong>, donde tratamos los transtornos de las adicciones a lo largo de un proceso de 9 meses donde los usuarios se <strong>autoayudan</strong> en base a sus experiencias con la supervición de <strong>terapéutas y psicologos</strong> para un seguimiento más adecuado y personalizado.
-            <br />
-            <br />
-            Nosotros nos especializamos en <strong>adicciones, codependencias, problemas de conducta, ludopatia</strong> entre otras patologías y transtornos. Nuestro equipo está capacitado para tratar a los usuarios de manera digna y seguir cada uno de los tratamientos que requieran, así como medicamento y sesiones de terapia grupal e individual.
-            </Typography>
-          </Grid>
-          <Grid
-            item
-            xs={12} lg={6}>
-
-            <Typography textAlign='justify'>
+              <Typography textAlign='justify'>
+              Somos una institución que opera sus instalaciones dentro de una  <strong>comunidad terapéutica</strong>, donde tratamos los transtornos de las adicciones a lo largo de un proceso de 9 meses donde los usuarios se <strong>autoayudan</strong> en base a sus experiencias con la supervición de <strong>terapéutas y psicologos</strong> para un seguimiento más adecuado y personalizado.
+              <br />
+              <br />
+              Nosotros nos especializamos en <strong>adicciones, codependencias, problemas de conducta, ludopatia</strong> entre otras patologías y transtornos. Nuestro equipo está capacitado para tratar a los usuarios de manera digna y seguir cada uno de los tratamientos que requieran, así como medicamento y sesiones de terapia grupal e individual.
               Nuestro objetivo es la <strong>rehabilitación</strong> del usuario asi como su <strong>reintegación social y familiar</strong> para que pueda llevar una nueva vida llena de oportunidades y con un pensamiento positivo libre de drogas y malos pensamientos.
               <br />
               <br />
               Transformamos las vidas de nuestros pacientes, los ayudamos a cumplir sus sueños, objetivos y metas.
-            </Typography>
+              </Typography>
+            </Grid>
+
+            <Grid item xs={12} lg={4}>
+
+              <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Image src='/images/home/logo.jpg' width={907} height={902}/>
+              </Box>
+            </Grid>
           </Grid>
-        </Grid>
+        </Container>
       </Box>
 
 
@@ -242,7 +262,7 @@ export default function Home() {
 
             <SwiperSlide key={ idx}>
 
-              <ModalImg image={ image.img}/>
+              <ModalImg image={ image.img} modalWidth={ image.width} modalHeight={ image.height}/>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -273,7 +293,7 @@ export default function Home() {
               Un lugar de recuperación para ellas...
             </Typography>
 
-            <SecondaryBtn text='llámanos' href='https://wa.link/yupydt'/>
+            <SecondaryBtn text='llámanos' href='https://wa.link/yupydt' target='_blank'/>
           </Grid>
 
   {/* Card Varonil __________ */}
@@ -301,7 +321,7 @@ export default function Home() {
               (33-1068-7964)
             </Typography>
 
-            <SecondaryBtn text='llámanos' href='https://wa.link/yupydt'/>
+            <SecondaryBtn text='llámanos' href='https://wa.link/yupydt' target='_blank'/>
           </Grid>
         </Grid>
       </Box>
