@@ -7,6 +7,8 @@ import {
   useTheme,
   useMediaQuery
   } from '@mui/material'
+// MUI icons
+import PhoneIcon from '@mui/icons-material/Phone'
 // Next component
 import Link from 'next/link'
 // React component
@@ -66,7 +68,7 @@ const NavBar = () => {
                   </Button>
               </Link>
             ))}
-            <PrimaryBtn text='contáctanos'/>
+            <PrimaryBtn text='contáctanos' startIcon={ <PhoneIcon />} href='tel:3319147923'/>
           </Fragment>
         )}
       </Toolbar>

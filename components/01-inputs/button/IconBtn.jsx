@@ -1,16 +1,21 @@
-// MUI components invoycing ____________________ //
+// MUI components
 import IconButton from '@mui/material'
+// Next component
+import Link from 'next/link';
 
 const IconBtn = ( props) => {
 
   return (
 
-    <IconButton
-      aria-label={ props.ariaLabel}
-      size={ props.size}>
+    <Link href= { props.href}>
 
-        { props.icon}
-    </IconButton>
+      <IconButton
+        aria-label={ props.ariaLabel}
+        size={ props.size}>
+
+          { props.icon}
+      </IconButton>
+    </Link>
   )
 }
 

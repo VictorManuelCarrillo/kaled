@@ -46,8 +46,8 @@ const DrawerNav = () => {
 
           { drawerLinks.map( ( link, idx) => (
 
-            <Link href={ link.href}>
-              <Box key={ idx}>
+            <Link key={ idx} href={ link.href}>
+              <Box>
 
                 <ListItemButton href={ link.href}>
 

@@ -157,7 +157,7 @@ export default function Home() {
         </Typography>
 
         <Typography variant='h6' sx={{ px: 4 }}>
-        Si notas que alguien de tu familia sufre de adicciones, codependencia o conductas nocivas para la salud <Button variant='text'>contáctate</Button> con nosotros y ayúdale a mejorar el rumbo de su vida
+        Si notas que alguien de tu familia sufre de adicciones, codependencia o conductas nocivas para la salud <Button variant='text' href='https://wa.link/yupydt'>contáctate</Button> con nosotros y ayúdale a mejorar el rumbo de su vida
         </Typography>
 
         <Box sx={{ my: 4 }}>
@@ -372,7 +372,7 @@ export default function Home() {
 
               <Grid key={ idx} item xs={12} sm={6} md={4} lg={3}>
 
-                <CardPrimaryAction 
+                <CardPrimaryAction
                   image={ card.image}
                   alt={ card.alt}
                   title={ card.title}

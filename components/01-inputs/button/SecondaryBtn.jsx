@@ -1,34 +1,38 @@
 // MUI components
 import Button from '@mui/material/Button'
+// Next component
+import Link from 'next/link'
 
 const SecondaryBtn = ( props) => {
 
   return (
 
-    <Button
-      variant='outlined'
-      href={ props.href}
-      size={ props.size}
-      startIcon={ props.startIcon}
-      endIcon={ props.endIcon}
-      sx={{
-        mx: 1,
-        my: 1,
-        fontWeight: 'bold',
-        border: '0.2em solid',
-        borderColor: 'button.secondary.main',
-        borderRadius: 2,
-        color: 'button.secondary.main',
-        transition: 'all 0.5s',
-        '&:hover': {
-          color: 'common.white',
-          bgcolor: 'button.secondary.main',
-          border: '0.2em solid',
-          borderColor: 'button.secondary.main'
-        }}}>
+    <Link href={ props.href}>
 
-      { props.text}
-    </Button>
+      <Button
+        variant='outlined'
+        size={ props.size}
+        startIcon={ props.startIcon}
+        endIcon={ props.endIcon}
+        sx={{
+          mx: 1,
+          my: 1,
+          fontWeight: 'bold',
+          border: '0.2em solid',
+          borderColor: 'button.secondary.main',
+          borderRadius: 2,
+          color: 'button.secondary.main',
+          transition: 'all 0.5s',
+          '&:hover': {
+            color: 'common.white',
+            bgcolor: 'button.secondary.main',
+            border: '0.2em solid',
+            borderColor: 'button.secondary.main'
+          }}}>
+
+        { props.text}
+      </Button>
+    </Link>
   )
 }
 

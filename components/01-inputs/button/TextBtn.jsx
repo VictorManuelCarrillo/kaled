@@ -1,30 +1,34 @@
 // MUI components
 import Button from '@mui/material/Button'
+// Next component
+import Link from 'next/link'
 
 const TextBtn = ( props) => {
 
   return (
 
-    <Button
-      variant='text' 
-      href={ props.href}
-      size={ props.size}
-      startIcon={ props.startIcon}
-      endIcon={ props.endIcon}
-      sx={{
-        px: 1,
-        mx: 0.2,
-        fontWeight: 'bold',
-        color: 'button.text.main',
-        transition: 'all 0.5s',
-        '&:hover': {
-          color: 'button.text.light',
-          bgcolor: 'none'
-        }
-      }}>
+    <Link href={ props.href}>
+    
+      <Button
+        variant='text' 
+        size={ props.size}
+        startIcon={ props.startIcon}
+        endIcon={ props.endIcon}
+        sx={{
+          px: 1,
+          mx: 0.2,
+          fontWeight: 'bold',
+          color: 'button.text.main',
+          transition: 'all 0.5s',
+          '&:hover': {
+            color: 'button.text.light',
+            bgcolor: 'none'
+          }
+        }}>
 
-      { props.text}
-    </Button>
+        { props.text}
+      </Button>
+    </Link>
   )
 }
 
