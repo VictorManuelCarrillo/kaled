@@ -5,13 +5,13 @@ import {
   Typography,
   Grid
   } from '@mui/material'
-// MUI icons invoycinng ____________________ //
+// MUI icons
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import PhoneIcon from '@mui/icons-material/Phone'
 import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt'
 import EmailIcon from '@mui/icons-material/Email'
-// compnents invoycing ____________________ //
+// compnents
 import TextBtn from '../../01-inputs/button/TextBtn'
 
 
@@ -38,26 +38,34 @@ const Footer = () => {
               <br />
               <TextBtn
                 text='WhatsApp'
+                href='https://wa.link/yupydt'
                 startIcon={ <WhatsAppIcon />}/>
               <Typography sx={{ ml: 4, mt: -1.5 }}>33 1914 7923</Typography>
 
               <TextBtn
                 text='Facebook'
+                href='https://www.facebook.com/kaled.coyula'
+                target='_blank'
                 startIcon={ <FacebookIcon />}/>
               <Typography sx={{ ml: 4, mt: -1.5 }}>Monte Sinahi Amma</Typography>
 
               <TextBtn
                 text='Oficina'
+                href='tel:3319147923'
                 startIcon={ <PhoneIcon />}/>
               <Typography sx={{ ml: 4, mt: -1.5 }}>33 1068 7964</Typography>
 
               <TextBtn
                 text='Visítanos'
+                href='https://goo.gl/maps/uDjDHmsdb37pa2f26'
                 startIcon={ <AddLocationAltIcon />}/>
               <Typography sx={{ ml: 4, mt: -1.5 }}>Periférico Ote. #6012, Tonalá, Jal.</Typography>
 
               <TextBtn
                 text='Correo'
+                href='mailto:monetsinahicoyulajalisco@gmail.com'
+                target='_blank'
+                subject='Informes%20sobre%20la%20institución'
                 startIcon={ <EmailIcon />}/>
               <Typography sx={{ ml: 4, mt: -1.5 }}>montesinahicoyulajalisco@gmail.com</Typography>
               <br />
@@ -68,22 +76,27 @@ const Footer = () => {
               <Typography variant='subtitle1' fontWeight='bold'>SERVICIOS:</Typography>
               <br />
               <TextBtn
-                text='Rehabilitación'/>
+                text='Inicio'
+                href='/'/>
               <br />
               <TextBtn
-                text='Comunidad Terapéutica'/>
+                text='Nosotros'
+                href='/nosotros'/>
               <br />
               <TextBtn
-                text='Instalaciones'/>
+                text='tratamiento'
+                href='/tratamiento'/>
               <br />
               <br />
               <Typography variant='subtitle1' fontWeight='bold'>INSTITUCIONES:</Typography>
               <br />
               <TextBtn
-                text='Kaled'/>
+                text='Kaled'
+                href='/'/>
               <br />
               <TextBtn
-                text='IFCA'/>
+                text='IFCA'
+                href='/'/>
               <br />
           </Grid>
 

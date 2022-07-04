@@ -6,37 +6,45 @@ import{
   CardContent,
   Typography
   } from '@mui/material'
+// Next component
+import Link from 'next/link'
 
 
 const CardPrimaryAction = ( props) => {
 
   return (
+    <Link href={ props.href}>
+    
+      <Card sx={{
+        color: 'card.text',
+        maxWidth: 450 }}>
 
-    <Card sx={{
-      color: 'card.text',
-      maxWidth: 450 }}>
+        <CardActionArea>
 
-      <CardActionArea>
+          <CardMedia
+            component='img'
+            image={ props.image}
+            alt={ props.alt}
+            sx={{
+              height: '25vh',
+              transition: 'transform 0.5s',
+              '&:hover': {
+                transform: 'scale(1.02)'
+              }}}/>
 
-        <CardMedia
-          component='img'
-          image={ props.image}
-          alt={ props.alt}
-          sx={{
-            height: '25vh'}}/>
+            <CardContent sx={{ bgcolor: 'card.content' }}>
 
-          <CardContent sx={{ bgcolor: 'card.content' }}>
+              <Typography variant='h5' component='div'>
+                { props.title}
+              </Typography>
 
-            <Typography variant='h5' component='div'>
-              { props.title}
-            </Typography>
-
-            <Typography variant='body2'>
-              { props.text}
-            </Typography>
-          </CardContent>
-      </CardActionArea>
-    </Card>
+              <Typography variant='body2'>
+                { props.text}
+              </Typography>
+            </CardContent>
+        </CardActionArea>
+      </Card>
+    </Link>
   )
 }
 

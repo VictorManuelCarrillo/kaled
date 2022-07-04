@@ -95,31 +95,37 @@ export default function Home() {
 
   const cards = [
     {
+      href: '/',
       title: 'drogadicción',
       alt: 'instituto contra drogadicción',
       image: '/images/home/tratamiento/drogadiccion.png',
 
     }, {
+      href: '/',
       title: 'famacodependencia',
       alt: 'instituto contra farmacodependencia',
       image: '/images/home/tratamiento/farmacodependencia.jpg',
 
     }, {
+      href: '/',
       title: 'ansiedad',
       alt: 'instituto contra ansiedad',
       image: '/images/home/tratamiento/ansiedad.png',
 
     }, {
+      href: '/',
       title: 'alcoholismo',
       alt: 'instituto contra drogadicción',
       image: '/images/home/tratamiento/alcoholismo.png',
 
     }, {
+      href: '/',
       title: 'codependencia',
       alt: 'instituto contra drogadicción',
       image: '/images/home/tratamiento/codependencia.png',
 
     }, {
+      href: '/',
       title: 'depresión',
       alt: 'instituto contra drogadicción',
       image: '/images/home/tratamiento/depresion.png',
@@ -157,14 +163,12 @@ export default function Home() {
         </Typography>
 
         <Typography variant='h6' sx={{ px: 4 }}>
-        Si notas que alguien de tu familia sufre de adicciones, codependencia o conductas nocivas para la salud <Button variant='text' href='https://wa.link/yupydt'>contáctate</Button> con nosotros y ayúdale a mejorar el rumbo de su vida
+        Si notas que alguien de tu familia sufre de adicciones, codependencia o conductas nocivas para la salud <Button variant='text' href='https://wa.link/yupydt' sx={{ fontWeight: 'bold', color: '#43c23c' }}>contáctate</Button> con nosotros y ayúdale a mejorar el rumbo de su vida
         </Typography>
 
         <Box sx={{ my: 4 }}>
 
-          <PrimaryBtn
-            text='llámanos'
-            startIcon={ <PhoneIcon />}/>
+          <PrimaryBtn text='llámanos' href='https://wa.link/yupydt' startIcon={ <PhoneIcon />}/>
         </Box>
       </Box>
 
@@ -269,7 +273,7 @@ export default function Home() {
               Un lugar de recuperación para ellas...
             </Typography>
 
-            <SecondaryBtn text='llámanos'/>
+            <SecondaryBtn text='llámanos' href='https://wa.link/yupydt'/>
           </Grid>
 
   {/* Card Varonil __________ */}
@@ -297,7 +301,7 @@ export default function Home() {
               (33-1068-7964)
             </Typography>
 
-            <SecondaryBtn text='llámanos'/>
+            <SecondaryBtn text='llámanos' href='https://wa.link/yupydt'/>
           </Grid>
         </Grid>
       </Box>
@@ -364,7 +368,7 @@ export default function Home() {
 
         <PrimaryTitle title='tratamiento'/>
         <SecondaryTitle title='Tenemos un equipo multidisciplinario capacitado para cualquier enfermedad, transtorno o adicción'/>
-        <Container>
+        <Container maxWidth='xl'>
 
           <Grid container rowSpacing={8} columnSpacing={2} sx={{ display: 'flex', justifyContent: 'center', pt: 2 }}>
 
@@ -373,6 +377,7 @@ export default function Home() {
               <Grid key={ idx} item xs={12} sm={6} md={4} lg={3}>
 
                 <CardPrimaryAction
+                  href={ card.href}
                   image={ card.image}
                   alt={ card.alt}
                   title={ card.title}
@@ -400,7 +405,7 @@ export default function Home() {
 
         <Typography variant='h4'>¿Dudas sobre nuestro programa o tratamiento?</Typography>
 
-        <PrimaryBtn text='llámanos'/>
+        <PrimaryBtn text='llámanos' href='https://wa.link/yupydt'/>
       </Box>
 
 

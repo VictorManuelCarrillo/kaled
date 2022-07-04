@@ -1,7 +1,7 @@
 // MUI components
 import IconButton from '@mui/material'
 // Next component
-import Link from 'next/link';
+import Link from 'next/link'
 
 const IconBtn = ( props) => {
 
