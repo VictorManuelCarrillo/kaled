@@ -11,7 +11,7 @@ const PrincipalHeading = ( props) => {
   return (
 
     <ParallaxBanner
-      layers={[ { image: props.image, speed: -10}]}
+      layers={[ { image: props.image, speed: -5}]}
       style={{ aspectRatio: '2/0.5' }}>
 
       <Typography

@@ -156,7 +156,7 @@ export default function Home() {
   ]
   return(
 
-    <Layout>
+    <Layout title='Inicio'>
 
       <Box
         component='section'
@@ -204,7 +204,7 @@ export default function Home() {
 
           <Grid container spacing={4} sx={{ p: 4 }}>
 
-            <Grid item xs={12} lg={8}>
+            <Grid item xs={12} lg={7}>
 
               <Typography textAlign='justify'>
               Somos una institución que opera sus instalaciones dentro de una  <strong>comunidad terapéutica</strong>, donde tratamos los transtornos de las adicciones a lo largo de un proceso de 9 meses donde los usuarios se <strong>autoayudan</strong> en base a sus experiencias con la supervición de <strong>terapéutas y psicologos</strong> para un seguimiento más adecuado y personalizado.
@@ -218,7 +218,7 @@ export default function Home() {
               </Typography>
             </Grid>
 
-            <Grid item xs={12} lg={4}>
+            <Grid item xs={12} lg={5}>
 
               <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                 <Image src='/images/home/logo.jpg' alt='instituo kaled ac coyula' width={907} height={902}/>
