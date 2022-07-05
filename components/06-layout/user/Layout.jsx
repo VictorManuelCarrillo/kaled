@@ -13,8 +13,8 @@ const Layout = ( { title, children}) => {
     <Fragment>
       <Head>
         <title>Kaled AC Coyula| {title}</title>
-        <meta name='author' content='Victor Manuel Carrillo Rojas'/>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name='author' content='Victor Manuel Carrillo Rojas'/>
         <meta name='keywords' content='centro de rehabilitación, centro de rehabilitación en gudalajara, centro de rehabilitacion guadalajara, anexo, anexo guadalajara, anexo en guadalajara, instituto, instituti guadalajara, instituto en adicciones, instituto en adicciones guadalajara, instituto en adicciones en guadalajara, instituto en adicciones en jalisco'/>
         <meta name='description' content='el insituto en adicciones Kaled AC Coyula es un centro innovador especializado en la desintoxicación, rehabilitación y control de adicciones y conductas nocivas para la salud. Conócenos y cambia la vida de los que más quieres'/>
       </Head>
