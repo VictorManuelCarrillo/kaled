@@ -19,16 +19,16 @@ import Link from 'next/link'
 // MUI keyframes animation
 const shakeAnimation = keyframes`
 0% { transform: rotate(0deg) scale(1)}
-2% { transform: rotate(10deg) scale(1.1)}
-4% { transform: rotate(-20deg) scale(1)}
-6% { transform: rotate(35deg) scale(1.2)}
-8% { transform: rotate(-45deg) scale(1)}
-10% { transform: rotate(35deg) scale(1.1)}
-12% { transform: rotate(-20deg) scale(1)}
+2% { transform: rotate(10deg) scale(1.1); box-shadow: 0px 0px 0px 10px #1e9c1e90}
+4% { transform: rotate(-20deg) scale(1); box-shadow: 0px 0px 0px 0px #1e9c1e50}
+6% { transform: rotate(35deg) scale(1.2); box-shadow: 0px 0px 0px 10px #1e9c1e90}
+8% { transform: rotate(-45deg) scale(1); box-shadow: 0px 0px 0px 0px #1e9c1e50}
+10% { transform: rotate(35deg) scale(1.1); box-shadow: 0px 0px 0px 10px #1e9c1e90}
+12% { transform: rotate(-20deg) scale(1); box-shadow: 0px 0px 0px 5px #1e9c1e50}
 14% { transform: rotate(10deg)}
 16% { transform: rotate(-20deg)}
 18% { transform: rotate(10deg)}
-20% { transform: rotate(0deg)}
+20% { transform: rotate(0deg); box-shadow: 0px 0px 0px 5px #1e9c1e20}
 100% { transform: rotate(0deg)}
 `
 

@@ -9,7 +9,7 @@ const CardImg = ( props) => {
   return(
 
     <Card sx={{
-      maxWidth: 750
+      minWidth: 150
     }}>
 
       <CardMedia

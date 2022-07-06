@@ -12,7 +12,7 @@ const Layout = ( { title, children}) => {
   return(
     <Fragment>
       <Head>
-        <title>Kaled AC Coyula| {title}</title>
+        <title>Kaled | {title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name='author' content='Victor Manuel Carrillo Rojas'/>
         <meta name='keywords' content='centro de rehabilitación, centro de rehabilitación en gudalajara, centro de rehabilitacion guadalajara, anexo, anexo guadalajara, anexo en guadalajara, instituto, instituti guadalajara, instituto en adicciones, instituto en adicciones guadalajara, instituto en adicciones en guadalajara, instituto en adicciones en jalisco'/>
