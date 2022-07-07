@@ -23,7 +23,6 @@ const Layout = ( { title, children}) => {
       <NavBar />
       <br />
       <br />
-      <br />
   {/* children layout component __________ */}
       { children}
 

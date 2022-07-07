@@ -9,13 +9,14 @@ const CardImg = ( props) => {
   return(
 
     <Card sx={{
-      minWidth: 150
+      minWidth: 150,
     }}>
 
       <CardMedia
         component='img'
         image={ props.image}
         alt={ props.alt}/>
+
     </Card>
   )
 }

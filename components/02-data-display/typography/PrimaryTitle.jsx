@@ -17,7 +17,7 @@ const PrimaryTitle = ( props) => {
       }}>
       
       <Typography
-        variant='h2'
+        variant='h3'
         fontWeight='bold'
         textTransform='capitalize'>
 

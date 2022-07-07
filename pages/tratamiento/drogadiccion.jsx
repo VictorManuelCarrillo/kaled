@@ -7,12 +7,18 @@ import {
   Grid,
   Typography
   } from '@mui/material'
-// Next component
+// MUI icons
+import PhoneIcon from '@mui/icons-material/Phone'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 // components
 import PrincipalTitle from '../../components/02-data-display/typography/PrincipalTitle'
 import PrimaryTitle from '../../components/02-data-display/typography/PrimaryTitle'
 import SecondaryTitle from '../../components/02-data-display/typography/SecondaryTitle'
+import PrimaryBtn from '../../components/01-inputs/button/PrimaryBtn'
+import SecondaryBtn from '../../components/01-inputs/button/SecondaryBtn'
 import CardImg from '../../components/04-surfaces/card/CardImg'
+
+
 export default function Drogadiccion() {
 
   return (
@@ -39,7 +45,7 @@ export default function Drogadiccion() {
                 Se le considera una adicción, porque <strong>es difícil intentar dejar de consumirlas por cuenta propia</strong>, ya que provocan alteraciones cerebrales en los mecanismos reguladores de la toma de desiciones y el control inhibitorio y porque el usuario de las mismas dedica gran parte de su tiempo en la búsqueda y consumo de ellas.
                 <br />
                 <br />
-                La drogadicción puede empezar con el consumo experimental de una droga recreativa en situaciones sociales y, en algunas personas, el consumo de la droga se vuelve más frecuente. En otras personas, en especial con los opioides, la adicción a las drogas empieza con la exposición a medicamentos recetados, o al recibir medicamentos de un amigo o un familiar al que se los recetaron.
+                La drogadicción puede empezar con el <strong>consumo experimental de una droga recreativa en situaciones sociales</strong> y, en algunas personas, el consumo de la droga se vuelve más frecuente. En otras personas, en especial con los opioides, la adicción a las drogas <strong>empieza con la exposición a medicamentos recetados, o al recibir medicamentos de un amigo o un familiar al que se los recetaron</strong>.
               </Typography>
             </Grid>
 
@@ -183,6 +189,12 @@ export default function Drogadiccion() {
                 <br />
                 LLámanos, pregunta por nuestro programa y conoce nuestras instalaciones, aún estas a tiempo para ayudarlo.
               </Typography>
+
+              <Box sx={{ mt: 8,}}>
+
+                <PrimaryBtn text='llámanos' href='tel:3319147923' target='_blank' startIcon={ <PhoneIcon />}/>
+                <SecondaryBtn text='contáctanos' href='https://wa.link/yupydt' target='_blank' startIcon={<WhatsAppIcon />}/>
+              </Box>
             </Grid>
           </Grid>
         </Container>

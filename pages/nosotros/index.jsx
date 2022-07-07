@@ -21,7 +21,7 @@ export default function Nosotros() {
   return(
 
 
-    <Layout>
+    <Layout title='Nosotros'>
 
       <Box  component='section'>
       <PrincipalTitle

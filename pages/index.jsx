@@ -117,37 +117,37 @@ export default function Home() {
 
   const cards = [
     {
-      href: '/',
+      href: '/tratamiento/drogadiccion',
       title: 'drogadicción',
       alt: 'instituto contra drogadicción',
       image: '/images/home/tratamiento/drogadiccion.png',
 
     }, {
-      href: '/',
+      href: '/tratamiento/farmacodependencia',
       title: 'famacodependencia',
       alt: 'instituto contra farmacodependencia',
       image: '/images/home/tratamiento/farmacodependencia.jpg',
 
     }, {
-      href: '/',
+      href: '/tratamiento/ansiedad',
       title: 'ansiedad',
       alt: 'instituto contra ansiedad',
       image: '/images/home/tratamiento/ansiedad.png',
 
     }, {
-      href: '/',
+      href: '/tratamiento/alcoholismo',
       title: 'alcoholismo',
       alt: 'instituto contra drogadicción',
       image: '/images/home/tratamiento/alcoholismo.png',
 
     }, {
-      href: '/',
+      href: '/tratamiento/codependencia',
       title: 'codependencia',
       alt: 'instituto contra drogadicción',
       image: '/images/home/tratamiento/codependencia.png',
 
     }, {
-      href: '/',
+      href: '/tratamiento/depresion',
       title: 'depresión',
       alt: 'instituto contra drogadicción',
       image: '/images/home/tratamiento/depresion.png',

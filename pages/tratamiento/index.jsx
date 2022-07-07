@@ -17,7 +17,7 @@ export default function Tratamiento() {
 
   return(
 
-    <Layout>
+    <Layout title='Tratamiento'>
 
       <PrincipalTitle
         title='tratamiento'
