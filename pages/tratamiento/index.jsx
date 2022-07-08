@@ -12,8 +12,43 @@ import {
 import PrincipalTitle from '../../components/02-data-display/typography/PrincipalTitle'
 import PrimaryTitle from '../../components/02-data-display/typography/PrimaryTitle'
 import SecondaryTitle from '../../components/02-data-display/typography/SecondaryTitle'
+import CardPrimaryAction from '../../components/04-surfaces/card/CardPrimaryAction'
 
 export default function Tratamiento() {
+
+  const cards = [
+    {
+      href: '/tratamiento/drogadiccion',
+      title: 'drogadicción',
+      alt: 'instituto contra drogadicción',
+      image: '/images/home/tratamiento/drogadiccion.png',
+
+    }, {
+      href: '/tratamiento/farmacodependencia',
+      title: 'famacodependencia',
+      alt: 'instituto contra farmacodependencia',
+      image: '/images/home/tratamiento/farmacodependencia.jpg',
+
+    }, {
+      href: '/tratamiento/ansiedad',
+      title: 'ansiedad',
+      alt: 'instituto contra ansiedad',
+      image: '/images/home/tratamiento/ansiedad.png',
+
+    }, {
+      href: '/tratamiento/alcoholismo',
+      title: 'alcoholismo',
+      alt: 'instituto contra drogadicción',
+      image: '/images/home/tratamiento/alcoholismo.png',
+
+    }, {
+      href: '/tratamiento/depresion',
+      title: 'depresión',
+      alt: 'instituto contra drogadicción',
+      image: '/images/home/tratamiento/depresion.png',
+
+    }
+  ]
 
   return(
 
@@ -45,6 +80,29 @@ export default function Tratamiento() {
             </Typography>
           </Box>
         </Container>
+      </Box>
+
+      <Box component='section' sx={{ py: 2 }}>
+
+        <SecondaryTitle title='Tenemos un equipo multidisciplinario capacitado para cualquier enfermedad, transtorno o adicción'/>
+          <Container maxWidth='xl'>
+
+            <Grid container rowSpacing={8} columnSpacing={2} sx={{ display: 'flex', justifyContent: 'center', pt: 2 }}>
+
+              { cards.map( ( card, idx) => (
+
+                <Grid key={ idx} item xs={12} sm={6} md={4} lg={3}>
+
+                  <CardPrimaryAction
+                    href={ card.href}
+                    image={ card.image}
+                    alt={ card.alt}
+                    title={ card.title}
+                    text={ card.text}/>
+                </Grid>
+              ))}
+            </Grid>
+          </Container>
       </Box>
 
       <Box component='section' sx={{ pt: 4 }}>

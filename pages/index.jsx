@@ -141,12 +141,6 @@ export default function Home() {
       image: '/images/home/tratamiento/alcoholismo.png',
 
     }, {
-      href: '/tratamiento/codependencia',
-      title: 'codependencia',
-      alt: 'instituto contra drogadicción',
-      image: '/images/home/tratamiento/codependencia.png',
-
-    }, {
       href: '/tratamiento/depresion',
       title: 'depresión',
       alt: 'instituto contra drogadicción',
