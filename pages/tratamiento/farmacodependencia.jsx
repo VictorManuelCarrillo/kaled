@@ -112,8 +112,63 @@ export default function Farmacodependencia() {
 
             <ul>
 
-              <li>Automedicación, expresada por el abuso de los medicamentos sin la autorización de un facultativo apropiado. El paciente incrementa la dosis buscando aliviar el malestar original o con una intencionalidad diferente a la inicial como por ejemplo alterar el estado de ánimo o suprimir síntomas de deprivación.</li>
+              <li>
+                Automedicación, expresada por el abuso de los medicamentos sin la autorización de un facultativo apropiado. El paciente incrementa la dosis buscando aliviar el malestar original o con una intencionalidad diferente a la inicial como por ejemplo alterar el estado de ánimo o suprimir síntomas de deprivación.
+                <br />
+                <br />
+              </li>
+
+              <li>
+                Preocupación por la obtención del medicamento. Acuden a diferentes salas de urgencias, compran o roban tarjetas de sanidad, inventan historias sobre perdida de recetas, intentan que el farmacéutico les venda sin prescripción o falsifican las recetas médicas. Intentan encontrar profesionales que no le conozcan y exageran o inventan dolores.
+                <br />
+                <br />
+              </li>
+
+              <li>
+                Compra de medicamentos por internet o de venta ilegal.
+                <br />
+                <br />
+              </li>
+
+              <li>
+                Uso continuado, a pesar de las consecuencias adversas como por ejemplo olvidos, enlentecimiento en los procesos cognitivos y el habla o sobredosis
+                <br />
+                <br />
+              </li>
+
+              <li>
+                Mezclan medicamentos o sustancias buscando potencializar o reducir efectos o simplemente para poder “funcionar” en el diario vivir.
+                <br />
+                <br />
+              </li>
+
+              <li>
+                Labilidad emocional o comportamental.
+                <br />
+                <br />
+              </li>
             </ul>
+
+          </Box>
+        </Container>
+      </Box>
+
+      <Box sx={{ py: 4 }}>
+
+        <SecondaryTitle title='la cura es posibe, nosotros podemos ayudarlo'/>
+
+        <Container maxWidth='lg' sx={{ py: 2 }}>
+
+          <Typography>
+            La cura a esta adicción es posible. Con nosotros el rumbo de tu ser más querido está asegurado para un rumbo mucho mejor. Con nuestro equipo de médicos y psicólogos podemos ayudarlo a controlar su problema y solucionarlo para siempre.
+            <br />
+            Contáctanos y dale la ayuda que necesita.
+          </Typography>
+
+          <Box sx={{ mt: 8,}}>
+
+            <PrimaryBtn text='llámanos' href='tel:3319147923' target='_blank' startIcon={ <PhoneIcon />}/>
+            <SecondaryBtn text='contáctanos' href='https://wa.link/yupydt' target='_blank' startIcon={<WhatsAppIcon />}/>
           </Box>
         </Container>
       </Box>
